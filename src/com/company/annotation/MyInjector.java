@@ -47,7 +47,7 @@ public class MyInjector {
     }
 
     public void scanForBean() throws Exception {
-        Set<Object> classes = findAllClasses("lab_1.sub_class");
+        Set<Object> classes = findAllClasses("com.company.model");
         for (Object cls : classes) {
             String thisClass = cls.toString().split(" ")[1];
             System.out.println(thisClass);
